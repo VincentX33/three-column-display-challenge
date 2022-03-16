@@ -57,10 +57,13 @@ h2 {
     box-sizing: border-box;
     margin: auto;
     text-align: center;
-    width: 16rem;
+    width: 25rem;
     font-family: 'Trebuchet MS', sans-serif;
     font-size: 18px;
     background-color: rgba(141, 63, 204,50%);
+    position: fixed;
+    bottom: 0;
+    right: 1em;
 }
 
 .attribution b:hover {
@@ -75,12 +78,12 @@ h2 {
     height: 30px;
     border-radius: 50%;
     border : 10px double blue;
-    padding: 10px;
-    margin-bottom: 0.5rem;
+    padding: 5px;
+    margin-bottom: 0.2rem;
     background-color: rgb(40, 3, 71);
 }
 
-a {
+main a {
     display: inline-block;
     width: 50%;
     text-decoration: none;
