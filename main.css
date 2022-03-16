@@ -27,7 +27,6 @@ h2 {
     height: 100%;
     padding: 2.5em 2.3em;
     /* overflow: auto; */
-    
 }
 #box1 {
     background-color: rgb(227, 136, 38);
@@ -146,9 +145,7 @@ a:hover {
     /* main a{
         bottom:-1em;
     } */
-
 }
-
 @media only screen and (max-width:1000px){
     .container {
         width: 90%;
@@ -230,9 +227,10 @@ a:hover {
         bottom:-1em;
     }
 }
-*/
-/* @media only screen and (max-height:500px){
+@media only screen and (max-height:500px){
     body {
         overflow-y: scroll;
     }
-}  */
+} 
+
+*/
