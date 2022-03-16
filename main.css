@@ -10,7 +10,7 @@ h2 {
     width: 68.5%;
     margin: auto;
     /* border:3px outset orange; */
-    height: 70vh;
+    height: 70%;
     position: absolute;
     top:50%;
     left: 50%;
@@ -26,8 +26,7 @@ h2 {
     border-collapse: collapse;
     height: 100%;
     padding: 2.5em 2.3em;
-    overflow: scroll;
-    
+    /* overflow: auto; */
 }
 #box1 {
     background-color: rgb(227, 136, 38);
@@ -53,14 +52,18 @@ h2 {
 
 /* default below */
 .attribution {
-    visibility: hidden;
+    /* visibility: hidden; */
+    display: none;
     box-sizing: border-box;
     margin: auto;
     text-align: center;
-    width: 16rem;
+    width: 25rem;
     font-family: 'Trebuchet MS', sans-serif;
     font-size: 18px;
     background-color: rgba(141, 63, 204,50%);
+    position: fixed;
+    bottom: 0;
+    right: 1em;
 }
 
 .attribution b:hover {
@@ -75,12 +78,12 @@ h2 {
     height: 30px;
     border-radius: 50%;
     border : 10px double blue;
-    padding: 10px;
-    margin-bottom: 0.5rem;
+    padding: 5px;
+    margin-bottom: 0.2rem;
     background-color: rgb(40, 3, 71);
 }
 
-a {
+main a {
     display: inline-block;
     width: 50%;
     text-decoration: none;
@@ -136,36 +139,66 @@ a:hover {
     .container {
         width: 80%;
     }
+    .box {
+        padding: 1.4em 1.4em ;
+    }
+    /* main a{
+        bottom:-1em;
+    } */
 }
 @media only screen and (max-width:1000px){
     .container {
         width: 90%;
     }
 }
+
 @media only screen and (max-width:900px){
     .box {
         float: none;
         width: 100%;
-        /* border:3px solid gold; */
         box-sizing: border-box;
         margin: auto;
+        border-radius: 0.25em;
+        /* margin-top: 0.2em; */
     }   
     .container {
-        width: 90%;
-        background-color: aliceblue;
+        width: 50%;
+        /* background-color: aliceblue; */
     }
-    #box3 {
-        border-bottom-left-radius: 0.25em;
-        border-bottom-right-radius: 0.25em;
-    }
+    /* main a {
+        top: 3em;
+    } */
+    
 
 }
-@media only screen and (max-width:350px){
+
+@media only screen and (max-width:500px){
     .box {
-        padding: 0.4em 0.4em ;
+        /* padding: 1em 1em ; */
+        max-height: max-content;
+    }
+    main a{
+        padding: 0.5em 1em;
+        width: 75%;
+    }
+    .container {
+        width: 90%;
     }
 }
-
+@media only screen and (max-width:185px){
+    main a{
+        padding:0.05em;
+        top:-1em;
+        width: 100%;
+    }
+    .box {
+        padding: 1em 0.3em ;
+    }
+    h2 {
+        font-size: 1em;
+    }
+}
+/*
 @media only screen and (min-height:1000px){
     
 }
@@ -179,19 +212,25 @@ a:hover {
         height: 60vh;
     }
 }
-
+*/
 @media only screen and (max-height:600px){
-    a {
+    .container {
+        height: 22em;
+    }
+    main a{
         bottom:-1em;
     }
 }
+/*
 @media only screen and (max-height:540px){
-    a {
-        bottom:-0.1em;
+    main a{
+        bottom:-1em;
     }
 }
 @media only screen and (max-height:500px){
     body {
         overflow-y: scroll;
     }
-}
+} 
+
+*/
